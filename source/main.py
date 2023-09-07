@@ -2,9 +2,10 @@
 Main cli or app entry point
 """
 
-def print_x(x):
-    print(x)
+def multiply(x,y):
+    return(x*y)
 
 
 if __name__ == "__main__":
-    print_x("hi")
+    out=multiply(x*y)
+    print("the result of fun multiply is",{out})
