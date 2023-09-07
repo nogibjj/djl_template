@@ -1,7 +1,8 @@
 all: install test format lint 
+
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	python3 -m pip install --upgrade pip 
+	python3 -m 	pip install -r requirements.txt
 
 test:
 	python -m pytest -vv --cov=main --cov=mylib test_*.py
@@ -23,4 +24,4 @@ lint:
 #deploy:
 	#deploy goes here
 		
-all: install lint test format deploy
+all: install lint test format
