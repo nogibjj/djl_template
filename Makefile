@@ -23,5 +23,3 @@ lint:
 
 #deploy:
 	#deploy goes here
-		
-all: install lint test format
