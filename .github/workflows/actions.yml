@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
       - name: install packages
         run: make install
       - name: lint
@@ -18,4 +22,5 @@ jobs:
       #  run: make test
       - name: format
         run: make format
+    
   
