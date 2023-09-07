@@ -1,3 +1,4 @@
+all: install test format lint 
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
