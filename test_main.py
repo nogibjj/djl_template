@@ -3,8 +3,7 @@ Test goes here
 
 """
 
-from mylib.calculator import add
+from source.main import multiply as mp
 
-
-def test_add():
-    assert add(1, 2) == 3
+def test_m():
+    assert mp(2, 2) == 4
